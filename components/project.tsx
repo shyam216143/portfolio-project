@@ -27,7 +27,7 @@ export default function Project(props: ProjectProps) {
     >
     <section
       className="relative rounded-lg bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8
-    sm:h-[20rem]  sm:group-even:pl-8 hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
+    sm:h-[25rem]  sm:group-even:pl-8 hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
     
     >
       <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
