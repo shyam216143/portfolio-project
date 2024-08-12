@@ -58,16 +58,18 @@ export default function Intro() {
         </div>
       </div>
       <motion.h1
-        className="mt-4 mb-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mt-4 mb-10 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         Hello, <span className="font-bold">I'm Shyam Kumar, </span>a{" "}
         <span className="font-bold">Full Stack Developer</span> with over {" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        on creating efficient, user-friendly interfaces and robust, scalable Frontend and Backends using 
-        React and Python Frameworks.
+        <span className="font-bold">two years</span> of experience. I specialize in
+        building efficient and user-centric<span className="italic">sites & apps</span>. 
+        I'm committed to transforming client visions into reality through innovative design solutions. 
+        <p>
+        For me, design isn't just about aesthetics; it's about creating intuitive interfaces that solve problems and delight users.
+        </p>
       </motion.h1>
       <motion.div
         className="flex flex-col  sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -95,7 +97,7 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full 
           outline-none focus:scale-115 hover:scale-110
           active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href="/shyamkumarvennu.pdf"
           download
         >
           Resume{" "}

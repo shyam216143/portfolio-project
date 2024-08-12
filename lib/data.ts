@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import hrmImg from "@/public/hrms.png";
+import socialMediaImg from "@/public/socialMediaApp.png";
 
 export const links = [
   {
@@ -46,14 +47,6 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2022 - present",
   },
-  // {
-  //   title: "Bachelors, KNRR Engineering College",
-  //   location: "Hyderabad, India",
-  //   description:
-  //     "I graduated in Computer Science and Engineering with a CGPA of 7.6",
-  //   icon: React.createElement(LuGraduationCap),
-  //   date: "2018-2022",
-  // },
   {
     title: "Graduated Bootcamp",
     location: "Hyderabad, India",
@@ -75,15 +68,6 @@ export const EducationData = [
     icon: React.createElement(LuGraduationCap),
     date: "2018-2022",
   },
-  // {
-  //   title: "Graduated Bootcamp",
-  //   subtitle: "Online Coursework, Hyderabad",
-  //   location: "Hyderabad, India",
-  //   description:
-  //     "While Pursuing, I spent 6 months to  developing a social media Application. Using a tech stack of Angular, Django Rest API, MySQL, and WebSocket, I also upskilled to full-stack development during this time.",
-  //   icon: React.createElement(CgWorkAlt),
-  //   date: "2021",
-  // },
   {
     title: "High School-MPC",
     subtitle: "Sri Chaitanya Junior Kalasala, Hyderabad",
@@ -108,22 +92,8 @@ export const projectsData = [
     description:
       "As a Software Developer, I developed a project over six months that connects people and allows them to share happy moments.",
     tags: ["Angular", "Django Rest API", "MySQL", "Bootstrap", "websocket"],
-    imageUrl: hrmImg,
+    imageUrl: socialMediaImg,
   },
-  // {
-  //   title: "rmtDev",
-  //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: rmtdevImg,
-  // },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   imageUrl: wordanalyticsImg,
-  // },
 ] as const;
 
 export const skillsData = [
