@@ -89,7 +89,7 @@ export default function Intro() {
           }}
         >
           {" "}
-          Contact for me{" "}
+          Contact{" "}
           <BsArrowRight className="group-hover:translate-x-1 transition opacity-80" />{" "}
         </Link>
 
