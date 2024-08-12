@@ -1,15 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import myProfileImg from "@/public/my_profile.jpg";
+import { SiLeetcode } from "react-icons/si";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -61,11 +62,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Shyam.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
+        Hello, <span className="font-bold">I'm Shyam Kumar, </span>a{" "}
+        <span className="font-bold">Full Stack Developer</span> with over {" "}
         <span className="font-bold">2 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React and Django</span>.
+        on creating efficient, user-friendly interfaces and robust, scalable Frontend and Backends using 
+        React and Python Frameworks.
       </motion.h1>
       <motion.div
         className="flex flex-col  sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -96,10 +98,10 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
+          Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition " />
         </a>
-
+        <div className="flex flex-row gap-2">
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15]
           hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
@@ -116,7 +118,17 @@ export default function Intro() {
         >
           <FaGithubSquare />
         </a>
+        <a
+          className="bg-white p-4 text-gray-700 text-[1.35rem] flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15]
+          active:scale-105 transition cursor-pointer borderBlack hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
+          href="https://leetcode.com/vennushyamkumar/"
+          target="_blank"
+        >
+          <SiLeetcode />
+        </a>
+        </div>
       </motion.div>
+      
     </section>
   );
 }

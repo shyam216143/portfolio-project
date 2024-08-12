@@ -2,9 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import hrmImg from "@/public/hrms.png";
 
 export const links = [
@@ -29,6 +26,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Education",
+    hash: "#education",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -36,29 +37,61 @@ export const links = [
 
 export const experiencesData = [
   
-  {
-    title: "Bachelors, KNRR Engineering College",
-    location: "Hyderabad, India",
-    description:
-      "I graduated in Computer Science and Engineering with a  CGPA of 7.6",
-    icon: React.createElement(LuGraduationCap),
-    date: "2018-2022",
-  },
-  {
-    title: "Graduated Bootcamp",
-    location: "Hyderabad, India",
-    description:
-      "Before graduating, I spent 6 months studying and immediately began developing a social media platform. Using a tech stack of Angular, Django Rest API, MySQL, and WebSocket, I also upskilled to full-stack development during this time.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2021-2022",
-  },
+  
   {
     title: "Full-Stack Developer",
     location: "Hyderabad, India",
     description:
-      "I'm now a full-stack developer working at Medplus(Optival) Software Soltiona. My stack includes React.js, Django, MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer working at Medplus(Optival) Software Solutions Private Limited. I Worked on a Human Resources Management System(HRMS) with stack includes React.js, Django Rest Frame Work, MySQL. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2022 - present",
+  },
+  // {
+  //   title: "Bachelors, KNRR Engineering College",
+  //   location: "Hyderabad, India",
+  //   description:
+  //     "I graduated in Computer Science and Engineering with a CGPA of 7.6",
+  //   icon: React.createElement(LuGraduationCap),
+  //   date: "2018-2022",
+  // },
+  {
+    title: "Graduated Bootcamp",
+    location: "Hyderabad, India",
+    description:
+      "Before graduating, I spent 6 months to  developing a social media Application. Using a tech stack of Angular, Django Rest API, MySQL, and WebSocket, I also upskilled to full-stack development during this time.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021-2022",
+  },
+] as const;
+
+export const EducationData = [
+  
+  {
+    title: "Bachelors of Technology in Computer Science",
+    subtitle: "KNRR Engineering College. Hyderabad",
+    location: "Hyderabad, India",
+    description:
+      "Relevant courses included Data Structures and Algorithms, Operating System, and Computer Network",
+    icon: React.createElement(LuGraduationCap),
+    date: "2018-2022",
+  },
+  // {
+  //   title: "Graduated Bootcamp",
+  //   subtitle: "Online Coursework, Hyderabad",
+  //   location: "Hyderabad, India",
+  //   description:
+  //     "While Pursuing, I spent 6 months to  developing a social media Application. Using a tech stack of Angular, Django Rest API, MySQL, and WebSocket, I also upskilled to full-stack development during this time.",
+  //   icon: React.createElement(CgWorkAlt),
+  //   date: "2021",
+  // },
+  {
+    title: "High School-MPC",
+    subtitle: "Sri Chaitanya Junior Kalasala, Hyderabad",
+    location: "Hyderabad, India",
+    description:
+      "I completed my high school with a 95% score, demonstrating my commitment to academic excellence and a strong foundation in the skills that drive my passion for technology ",
+    icon: React.createElement(LuGraduationCap),
+    date: "2016-2018",
   },
 ] as const;
 
@@ -66,8 +99,15 @@ export const projectsData = [
   {
     title: "Open HRMS",
     description:
-      "As a Python full-stack developer, I’ve spent two years building and designing the backend and UI/UX for key HRMS modules, including Attendance, Timesheet, Activity Logs, and Self-Onboarding",
-    tags: ["React.js", "Django", "MySQl", "Redis", "Celery", "AWS S3", "Bootstrap", "Webpack"],
+      "As a Python full-stack developer, I’ve spent two years building and designing the backend and UI/UX for HRMS Project which including Attendance, Timesheet, Activity Logs, and Self-Onboarding etc.",
+    tags: ["React.js", "Django", "MySQL", "Redis", "Celery", "AWS S3", "Bootstrap", "Webpack", "Redux Toolkit"],
+    imageUrl: hrmImg,
+  },
+  {
+    title: "Social Media App",
+    description:
+      "As a Software Developer, I developed a project over six months that connects people and allows them to share happy moments.",
+    tags: ["Angular", "Django Rest API", "MySQL", "Bootstrap", "websocket"],
     imageUrl: hrmImg,
   },
   // {
@@ -87,17 +127,17 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "C",
+  "Java",
+  "Python",
+  "JavaScript",
   "HTML",
   "CSS",
-  "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Git",
   "Tailwind",
   "MySQL",
-  "Redux Toolkit",
-  "Python",
   "Django",
   "Rest API",
   "Redis",
@@ -106,12 +146,12 @@ export const skillsData = [
   "Routing",
   "AWS S3",
   "Bootstrap",
-  "Redux",
   "Docker",
-  "React Testing Library",
+  "Git",
+  "Redux Toolkit",
   "Framer Motion",
   "Session & Token Authentication",
   "Capacitor.js",
   "JQuery",
-  "Babel"
+  "Babel",
 ] as const;
