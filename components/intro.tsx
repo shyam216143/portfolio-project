@@ -97,7 +97,7 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full 
           outline-none focus:scale-115 hover:scale-110
           active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/shyamkumarvennu.pdf"
+          href="/ShyamKumarVennu.pdf"
           download
         >
           Resume{" "}
